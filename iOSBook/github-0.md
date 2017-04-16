@@ -1,0 +1,52 @@
+<p align="center" >
+<img src="https://raw.githubusercontent.com/zhangkeqingc/CBook/master/Sources/rooster.png" alt="AFNetworking" title="AFNetworking">
+</p>
+
+
+# iOS开发笔记-搭建github个人博客
+
+做了几年的开发,总结做的很少,有点惭愧。从今天开始我将遇到的问题和项目中的经验将以精简的方式记录下来。
+
+如果你也有相同的想法,那么我们可以交个朋友,我今天所要总结的内容就是如何在github上搭建一个个人博客。我选择github作为博客的容器是因为github的使用率比较频繁。废话不多说，请看下面操作步骤。
+
+
+##  一、申请gmail邮箱
+给自己申请一个有意义并且响亮的gmail邮箱吧。申请地址：http://mail.google.com/mail/signup,这里是我的gmail邮箱：zhangkeqinga@gmail.com。
+
+##  二、申请Github账号
+申请号gmail邮箱之后，就可以申请Github。申请地址：https://github.com ,这里是我的Github账号：zhangkeqinga@gmail.com。
+
+
+##  三、学会Github上传下载的基本命令
+
+###  create a new repository on the command line
+
+```bash
+$ echo "# iOS" >> README.md
+$ git init
+$ git add README.md
+$ git commit -m "first commit"
+$ git remote add origin https://github.com/bookmark.git
+$ git push -u origin master
+```
+
+###  push an existing repository from the command line
+
+```bash
+$ git remote add origin https://github.com/zhangkeqingc/bookmark.git
+$ git push -u origin master
+```
+
+###  push change
+
+```bash
+$ git add .
+$ git commit -m '修改内容描述'
+$ git remote add origin https://github.com/bookmark.git
+$ git push origin master
+```
+
+以上三步可参考具体的文档进行操作，供参考：http://www.07net01.com/2015/08/895617.html
+
+##  四、创建Github个人博客
+将创建号的.md文件通过上面的方法上传到Github上便可以作为一个简单的个人博客，一个简单的网络笔记本对开发的童鞋们来说还是会有很多帮助的。    

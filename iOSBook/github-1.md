@@ -1,0 +1,14 @@
+<p align="center" >
+<img src="https://raw.githubusercontent.com/zhangkeqingc/bookmark/master/Sources/鸡年.png" alt="AFNetworking" title="AFNetworking">
+</p>
+
+
+# iOS https自签名证书— xxx.crt 转化成xxx.cer 格式 
+
+## 终端转换方式
+
+```bash
+* 1、在服务器人员，给你发送的crt证书后，进到证书路径，执行下面语句(openssl x509 -in 你的证书.crt -out 你的证书.cer -outform der)这样你就可以得到cer类型的证书了
+* 2、双击，导入电脑
+* 3、可以直接把转换好的cer文件拖动到工程中
+```

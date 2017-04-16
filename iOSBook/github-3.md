@@ -1,0 +1,33 @@
+<p align="center" >
+<img src="https://raw.githubusercontent.com/zhangkeqingc/bookmark/master/Sources/鸡年.png" alt="AFNetworking" title="AFNetworking">
+</p>
+
+
+# iOS开发笔记-iOS远程推送
+
+
+##  一、开发证书申请
+
+登录开发者账号：https://developer.apple.com/account/
+
+
+
+##  二、推送证书申请
+
+
+
+##  三、个推管理推送
+
+###  申请个推账号
+
+###  项目添加个推的SDK
+
+###  项目添加个推的推送代码
+
+###  个推的透传消息
+
+
+
+
+```bash
+```
