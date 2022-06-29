@@ -1,0 +1,24 @@
+
+相册
+
+1. PHAsset: 代表照片库中的一个资源，通过PHAsset可以获取和保存资源
+2. PHFetchOptions 获取资源时的参数，可以为nil(默认值)
+3. PHFetchResult： 表示一系列的资源集合，也可以理解为相册集合
+4. PHAssetCollection: 表示一系列相册，例如：最近删除，视频列表、收藏等等
+5. PHImageManager : 处理资源的加载，传入一个PHImageRequestOptions控制资源的输出尺寸等规格
+6. PHImageRequestOptions: 控制加载图片时的一系列参数
+
+
+
+第一步，获取相册使用权限：
+第二步，获取 Albums 和 Assets，先介绍一些核心类：
+第三步，显示照片和视频的缩略图，PHAsset 包含的只是照片和视频的信息，缩略图要通过 PHImageManager 的 requestImage 方法异步获取：
+
+
+导出相册中的照片
+和前面获取照片缩略图的代码一样，只是设置的照片质量不同：
+
+接着，AVAssetExportSession 通过 exportAsynchronously 异步导出相册中视频到沙盒中，cancelExport 取消导出，status 和 progress 获取状态和进度：
+
+导出相册中的视频
+
